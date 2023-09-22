@@ -1,0 +1,44 @@
+table{
+    border-collapse: separate;
+    border-spacing: 10px;
+    font-size:larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0 auto;
+}
+td{
+    padding:5px;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:#99775c ;
+    
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 36px;
+}
+.section {
+    color:#8f6543;
+    background-color:  #fdf8f0;;
+    box-shadow: 0px 0px 10px rgba(44, 43, 41, 0.872);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+body{
+    background-color:#d2bcac;
+}
+button[type="submit"] {
+width: 150px;
+height: 50px;
+padding: 10px 20px;
+font-size: 18px;
+background-color:#c19576;
+color: #fff;
+transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+background-color: #b49e8f;
+}

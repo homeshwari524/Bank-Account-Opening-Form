@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Opening Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="section"><h1 style="text-align: center;">New Account Opening Form</h1>
+        
+    </div>
+    <hr>
+    
+    <div class="section"><!--Personal Information Section-->
+        <h2>A.Personal Information</h2><hr>
+    
+    
+
+    <form action="Account Opening Form.html" method="post" onsubmit="return false;">
+        <table>
+            <!-- First Row for Name -->
+            <tr>
+                <td >1.Name (same as ID proof):</td>
+                <td>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required></td>
+                <td><input type="text" id="mname" name="mname" placeholder="Middle Name" required></td>
+                <td><input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                </td>
+            </tr>
+
+            <!-- Second row for Maiden Name -->
+            <tr>
+                <td>2.Maiden Name:</td>
+                <td><input type="text" id="maiden_fname" name="maiden_fname" placeholder="First Name" required></td>
+                <td><input type="text" id="maiden_mname" name="maiden_mname" placeholder="Middle Name" required></td>
+                <td><input type="text" id="maiden_lname" name="maiden_lname" placeholder="Last Name"required></td>
+            </tr>
+            
+            <!--Third Row for DOB -->
+            <tr>
+                <td>3.Date of Birth:</td>
+                <td><input type="date" id="DOB" name="DOB" required></td> 
+            </tr>  
+
+            <!--Fourth Row For Gender-->
+            <tr>
+                <td>4.Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="Gender" >
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="Gender" >
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="others" name="Gender" >
+                    <label for="others">Others</label>
+                </td>
+            </tr>
+
+            <!--Fifth Row For Marital Status-->
+            <tr>
+                <td>4.Marital Status:</td>
+                <td>
+                    <input type="radio" id="married" name="Marital Status" >
+                    <label for="male">Married</label><br>
+                    <input type="radio" id="unmarried" name="Marital Status" >
+                    <label for="female">Unmarried</label><br>
+                    <input type="radio" id="others" name="Marital Status" >
+                    <label for="others">Others</label>
+                </td>
+            </tr>
+
+            <!--Sixth Row for Parents' Name-->
+            <tr>
+                <td>5.Name of (Please tick one):</td>
+                <td>
+                    <input type="checkbox" id="father" name="name">
+                    <label for="father">Father</label><br>
+                    <input type="checkbox" id="mother" name="name">
+                    <label for="father">Mother</label><br>
+                    <input type="checkbox" id="spouse" name="name">
+                    <label for="father">Spouse*</label>
+                </td>
+            </tr>
+            
+            <!--Seventh row to fill parents' name-->
+            <tr>
+                <td><input type="text" id="fname" name="fname" placeholder="First Name" required></td>
+                <td><input type="text" id="mname" name="mname" placeholder="Middle Name" required></td>
+                <td><input type="text" id="lname" name="lname" placeholder="Last Name" required></td>
+            </tr>
+
+            <!--Eighth row to choose Nationality-->
+            <tr>
+                <td>6.Nationality:</td>
+                <td>
+                    <input type="radio" id="indian" name="nationality" value="Indian" >
+                    <label for="indian">Indian</label><br>
+                    <input type="radio" id="others" name="nationality" value="Other" >
+                    <label for="others">Other</label>
+                </td> 
+                <td colspan="2">
+                    <label for="country">Country Name:</label>
+                    <input type="text" id="country" name="country">
+                </td>
+            </tr>
+            <!--Ninth Row for Educational Qualifications-->
+            <tr>
+                <td>7.Educational Qualifications:</td>
+                <td>
+                    <select id="qualification" name="qualification">
+                    <option value="high_school">10th passed</option>
+                    <option value="high_school">12th passed</option>
+                    <option value="associate_degree">Associate Degree</option>
+                    <option value="bachelors_degree">Bachelor's Degree</option>
+                    <option value="masters_degree">Master's Degree</option>
+                    <option value="doctorate">Doctorate</option>
+                    <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+        <!--Tenth Row for PAN Number-->    
+            <tr>
+                <td>8.PAN Number(10 digits)*:</td>
+                <td>
+                    <input type="text" id="pan" name="pan" maxlength="10" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" placeholder="ABCDE1234F" required>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</div>
+    <!--------------------------------------A part ends here-------------------------------------------->
+    <hr>
+    <!--B.Contact Details-->
+    <div class="section">
+    <h2>B.Contact Details(All Communications will be sent on provided Mobile No./Email-ID)</h2>
+    <hr>
+            <form action="Account Opening Form.html" method="post" onsubmit="return false;">
+            <table>
+            <tr><!--Mobile No.-->
+                
+            <td>
+                <label for="mobile">1.Mobile Number:</label>
+                <input type="text" id="prefix" name="prefix" maxlength="3" placeholder="+91" required style="width: 23px;">
+                <input type="tel" id="mobile" name="mobile" maxlength="10" pattern="[0-9]{10}" placeholder="Mobile number" required>
+            </td>
+            </tr>
+
+            <tr><!-- Email ID -->
+                
+                <td>
+                <label for="email">2.Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </td>
+            </tr>
+
+        <tr><!-- STD Telephone for Office -->
+            <td>
+                <label for="std_office">3.STD Telephone (Office):</label>
+                <input type="tel" id="std_office" name="std_office" placeholder="STD code" required style="width: 30px;">
+                <input type="tel" id="tel_office" name="tel_office" placeholder="Telephone number" required>
+            </td>
+        </tr>    
+
+        <tr><!-- STD Telephone for Residence -->
+        <td>
+            <label for="std_residence">4.STD Telephone (Residence):</label>
+            <input type="tel" id="std_residence" name="std_residence" placeholder="STD code" required style="width: 30px;">
+            <input type="tel" id="tel_residence" name="tel_residence" placeholder="Telephone number" required>
+        </td>
+        </tr>
+
+        </table>
+    </form>
+</div>
+<!------------------------------------------B part ends here---------------------------------------->  
+    <hr>
+    <div class="section">
+    <h2>C.Proof of Identity</h2>
+    <hr>
+    <form action="Account Opening Form.html" method="post" onsubmit="return false;">
+        <table>
+        <tr><!--Document Type-->
+            <td>
+                <label for="document_type">1.Select Document:</label>
+                <select id="document_type" name="document_type">
+                <option value="passport">Passport</option>
+                <option value="driver_license">Driver's License</option>
+                <option value="voter_id">Voter ID</option>
+                <option value="aadhar_card">Aadhar Card</option>
+                <option value="pan_card">PAN Card</option>
+                <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr><!--Document Number-->
+            <td>
+                <label for="document_number">2.Identification Number/Document Number:</label>
+                <input type="text" id="document_number" name="document_number" maxlength="24" placeholder="Enter number" required>
+            </td>
+        </tr>
+
+        </table>
+    </form>
+</div>
+<!-------------------------------------------C part Ends here ------------------------------------------>
+<hr>
+<div class="section">
+    <h2>D.Address Details</h2>
+    <hr>
+    <form action="Account Opening Form.html" method="post" onsubmit="return false;">
+    <table>
+    <tr><!-- Address Type -->
+        <td>
+            <label for="address_type">1.Address Type:</label>
+            <select id="address_type" name="address_type">
+            <option value="residential">Residential</option>
+            <option value="business">Business</option>
+            <option value="registered_office">Registered Office</option>
+            </select>
+        </td>
+    </tr>
+    <tr><!-- Address -->
+    <td>
+        <label for="address">2.Address:</label>
+        <textarea id="address" name="address" placeholder="Enter address" required></textarea>
+    </td>
+    </tr>
+
+    <tr><!-- city/village -->
+        <td>
+            <label for="city">3.City/Village:</label>
+            <input type="text" id="city" name="city" placeholder="City/Village" required>
+        </td>
+    </tr>
+    <tr><!-- District -->
+        <td><label for="district">4.District:</label>
+            <input type="text" id="district" name="district" placeholder="District" required></tr>
+    </td>
+
+<tr><!-- State -->
+    <td><label for="state">5.State:</label>
+        <input type="text" id="state" name="state" placeholder="State" required></td></tr>
+
+<tr><!-- Pin -->
+    <td><label for="pin">6.Pin:</label>
+        <input type="text" id="pin" name="pin" maxlength="6" placeholder="PIN code" required>
+        </td>
+    
+    </tr>
+
+        </td>
+        </tr>
+
+    </table>
+    </form>
+</div>
+
+<!----------------------------------------------D part ends here------------------------------------> 
+<hr>
+<div class="section">
+    <h2>E.Declaration Cum Undertaking Cum Self-Certification.</h2>
+    <hr>
+    <form action="Account Opening Form.html" method="post" onsubmit="return false;">
+    <table>
+        <tr>
+        <td>1. I have read the copy of Terms and Conditions of the Account Opening Form given to me. The Terms and Conditions have been explained to me/us and having understood, I accept the same.
+        </td>
+        </tr>
+        <tr>
+        <td>2. I hereby declare that I have submitted the Aadhaar Card issued by UIDAI voluntarily for identification and /or address proof towards the compliance of KYC norms under the PMLA, 2002.
+
+        </td>
+        </tr>
+        <tr>
+        <td>3. I hereby consent that the Bank may verify the same with the UIDAI and authorise the UIDAI expressly to release the identity and address through biometric / OTP based authentication to the Bank.</td>
+        </tr>
+        <tr><!-- Single checkbox for all three declarations -->
+            <td>
+                <label>
+                <input type="checkbox" id="all_declarations" name="all_declarations">
+                I have read and agree to all the declarations mentioned above.
+                </label>
+            </td>
+        </tr>
+        
+        <tr><!-- Signature Upload -->
+            <td>
+                <label for="signature">Upload Your Signature:</label>
+                <input type="file" id="signature" name="signature" accept=".png, .jpg, .jpeg" required>
+            </td>
+        </tr>
+
+        <tr><!-- Photo Upload -->
+            <td>
+                <label for="photo">Upload Your Photo:</label>
+                <input type="file" id="photo" name="photo" accept=".png, .jpg, .jpeg" required>
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+<!----------------------------------------SUBMIT SECTION------------------------------------------------>
+<hr>
+<div class="section">
+    <form action="Account Opening Form.html" method="post" onsubmit="return false;">
+    <table>
+    <tr>
+    <td colspan="2">
+        <button type="submit">SUBMIT</button>
+    </td>
+    </tr>
+    </table>
+    </form>
+</div>
+
+</body>
+</html>
